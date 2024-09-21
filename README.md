@@ -1,2 +1,0 @@
-# boostrap-test
-Testing Boostrap

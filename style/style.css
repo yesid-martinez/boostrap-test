@@ -1,0 +1,392 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: normal;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+:root{
+    --red: #e50914;
+}
+
+body {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background: #000;
+}
+
+header {
+    z-index: 1;
+}
+
+a, a:hover {
+    color: inherit;
+}
+
+section {
+    border-bottom: 8px solid #222;
+}
+
+.logo{
+    max-height: 36px;
+}
+
+
+.btn-login {
+    background-color: var(--red);
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.box-background, .box .content {
+    height: 99vh;
+    width: 100%;
+}
+
+.box .content h1 {
+    font-size: 3.125rem;
+    color: #fff;
+}
+
+.box .content h2 {
+    font-size: 1.625rem;
+    color: #fff;
+}
+
+.box .content h3, .perguntas .subtitle {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.box .box-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-background::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.4);
+    background-image: -webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.8)),color-stop(60%,rgba(0,0,0,0)),to(rgba(0,0,0,.8)));
+    background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: -moz- oldlinear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+}
+
+.form-control{
+    height: 60px;
+}
+
+.input-group{
+    width: 700px;
+}
+
+
+.input-group .input-group-text {
+    font-size: 1.625rem;
+    background-color: var(--red);
+    border-color: var(--red);
+    border-radius: 0;
+    height: 60px;
+}
+
+section .title{
+    font-size: 3.125rem;
+}
+
+section .subtitle {
+    font-size: 1.625rem;
+}
+
+
+.input-group .icon-svg{
+    width: 1rem;
+    height: 1.2rem;
+}
+
+.card-video{
+    position: absolute;
+    left: 13.5%;
+    top: 21%;
+    max-width: 72.5%;
+}
+
+.video-tv img{
+    position: relative;
+    z-index: 1;
+}
+
+.mobile-card{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: #000;
+    align-items: center;
+    width: 60%;
+    min-width: 15em;
+    padding: 0.25em 0.65em;
+    border: 2px solid rgba(255,255,255,.25);
+    box-shadow: 0 0 2em 0 #000;
+    border-radius: 0.75em;
+}
+
+.mobile-card .card-image img {
+    height: 4.5em;
+}
+
+.mobile-card h5 {
+    font-size: 1rem;
+}
+
+.mobile-card label{
+    font-size: 0.9rem;
+    color: #0071eb;
+}
+
+.mobile-card .gif img{
+    width: 2.5em;
+
+}
+
+.video-desktop video {
+    position: absolute;
+    left: 18%;
+    max-width: 64%;
+    top: 11%;
+}
+.video-desktop img {
+    z-index: 1;
+    position: relative;
+}
+
+.perguntas .form-group{
+    outline: none;
+    border: 0;
+    margin-bottom: 8px;
+    background-color: black;
+   
+}
+
+.perguntas .accordion button {
+    background: #303030;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    margin-bottom: 1px;
+    width: 100%;
+    border: 0;
+    text-align: left;
+    position: relative;
+    color: #fff;
+    outline: none;
+    font-size: 1.625rem;
+}
+
+.perguntas .accordion img {
+    position: absolute;
+    right: 10px;
+    fill: #fff;
+    height: 3rem;
+    padding: 0.5rem;
+    transform: rotate(45deg);
+}
+
+.perguntas .accordion button[aria-expanded="true"] img {
+    transform: rotate(90deg);
+}
+
+.perguntas .accordion .card-body {
+    background: #303030;
+    width: 100%;
+    border: none;
+    border-top: black;
+    text-align: left;
+    color: #fff;
+    white-space: pre-line;
+    font-size: 1.625rem;
+    margin-top: 2px;
+}
+
+footer, footer a {
+    color: #757575;
+    text-decoration: none;
+}
+
+ footer a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    font-size: 13px;
+}
+
+.select-globe select {
+    align-items: center;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    color: #999;
+    font-size: 16px;
+    padding: 12px 12px 12px 50px;
+    line-height: 1.7;
+}
+
+.select-globe img {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 16px;
+}
+
+.select-globe-header select {
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    color: #fff;
+    font-size: .875rem;
+    padding: 0.5rem 1.375rem;
+    margin-right: 2rem;
+}
+
+.select-globe-header img {
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    width: 16px;
+}
+
+@media (min-width: 950px){
+    .mobile{
+        left: -15%;
+    }
+}
+
+
+
+@media ( max-width: 992px) {
+    .box .content h1{
+        font-size: 50px;
+    }
+
+    .box .content h2{
+        font-size: 26px;
+    }
+
+    .box .content h3{
+        font-size: 23px;
+    }
+
+    .input-group{
+        width: 80vw;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .input-group .form-control{
+        height: 60px;
+        width: 100%;
+        margin-bottom: 1rem;
+}
+    .input-group-append {
+        display: flex;
+}
+    .input-group .input-group-append span{
+        font-size: 1rem;
+        height: 40px;
+}
+
+
+}
+
+
+@media (max-width: 548px) {
+    .log {
+        max-height: 24px;
+    }
+
+    .btn-login {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .box .content h1{
+        font-size: 1.75rem;
+    }
+
+    .box .content h2{
+        font-size: 1.125rem;
+    }
+
+    .box .content h3{
+        padding: 0 7%;
+    }
+
+    .form-control {
+        height: 48px;
+        flex: none !important;
+    }
+
+    .input-group .input-group-text {
+        font-size: 1rem;
+        min-height: 44px;
+        font-weight: 500;
+        border-radius: 2px;
+    }
+
+    .input-group .icon-svg {
+        width: 1rem;
+        height: 0.8rem;
+    }
+
+    .box-background, .box .content {
+        height: 64vh;
+    }
+
+    section .title{
+        font-size: 1.625rem;
+        text-align: center;
+    }
+
+    section .subtitle{
+        font-size: 1.125rem;
+        text-align: center;
+        padding: 0 2%;
+        margin-top: 1rem;
+
+    }
+
+    .perguntas {
+        padding: 0;
+    }
+
+    .perguntas .accordion button {
+        font-size: 1.125rem;
+        padding: 0.8rem 2.2rem 0.8rem 1.2rem;
+
+    }
+
+    .perguntas .accordion button img {
+        font-size: 2.5rem;
+        height: 2rem;
+
+    } 
+    .perguntas .subtitle {
+        padding: 0 7%;
+    }
+
+    .form-group {
+        margin-bottom: 8px;
+    }
+    
+
+
+}
